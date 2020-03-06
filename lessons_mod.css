@@ -1,3 +1,11 @@
-.hideOnDialog.right-col a {
+a[href*="darren-cambridge"] {
+    display: none;
+}
+
+a#show-pages {
+    display: none;
+}
+
+.neoPortletTitleWrap.oldPortal {
     display: none;
 }
