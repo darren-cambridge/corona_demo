@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ACE Corona Virus Embedded Dashboard Demo</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+			font-family: "Hind",sans-serif !important;
+			td a {
+				vertical-align: top;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div id="dashboard_navbar">
+				<ul class="nav nav-tabs nav-justified">
+					<li class="active"><a href="#" class="btn btn-primary">Dashboard</a></li>
+					<li><a href="#" class="btn btn-primary">Guidance</a></li>
+					<li><a href="#" class="btn btn-primary">Study Abroad</a></li>
+				</ul>
+			</div>
+			<div class="well">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3>
+						<button class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#basic_stats">
+						<span class="glyphicon glyphicon-resize-vertical"></span>
+						</button>
+						Basic Statistics
+						</h3>
+					</div>
+				</div>
+				<div class="row collapse in" id="basic_stats">
+					<div class="col-sm-6">
+						<h4>Confirmed Cases and Deaths Overall</h4>
+						<img class="img-responsive" src="./images/jhu_map_screenshot.png" alt="JHU map of confirmed cases">
+						<p class="text-info">See Johns Hopkins CSSE dashboard for full international statistics</p>
+					</div>
+					<div class="col-sm-6">
+						<h4>Confirmed Cases and Deaths in Higher Education</h4>
+						<div class="infogram-embed" data-id="4604a156-de34-46ba-9cad-5a3179ee2d6d" data-type="interactive" data-title="COVID-19 Cases at Higher Education Institutions"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/4604a156-de34-46ba-9cad-5a3179ee2d6d" style="color:#989898!important;text-decoration:none!important;" target="_blank">COVID-19 Cases at Higher Education Institutions</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<h3>
+						<button class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#warnings">
+						<span class="glyphicon glyphicon-resize-vertical"></span>
+						</button>
+						Travel Warnings and Guidance
+						</h3>
+					</div>
+				</div>
+				<div class="row collapse in" id="warnings">
+					<div class="col-sm-6">
+						<h4>COVID-19 Travel Warnings</h4>
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Country</th>
+									<th>Agency</th>
+									<th>Level</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<img src="./images/china_flag_25h.png" alt="Chinese flag">
+										<p class="text-muted">China</p>
+									</td>
+									<td><img src="./images/cdc_logo_50sq.png" alt="CDC"></td>
+									<td><a href="https://wwwnc.cdc.gov/travel/notices/watch/novel-coronavirus-china" target="_blank">Level 3: No non-essential travel, No foreign entry</a></td>
+								</tr>
+								<tr>
+									<td><img src="./images/china_flag_25h.png" alt="Chinese flag">
+										<p class="text-muted">China</p>
+									</td>
+									<td><img src="./images/state_logo_50sq.png" alt="Department of State"></td>
+									<td><a href="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/china-travel-advisory.html" target="_blank">Level 4: Do Not Travel</a></td>
+								</tr>
+								<tr>
+									<td><img src="./images/japan_flag_25h.png" alt="Japanese flag">
+										<p class="text-muted">Japan</p></td>
+										<td><img src="./images/cdc_logo_50sq.png" alt="CDC"></td>
+										<td><a href="https://wwwnc.cdc.gov/travel/notices/watch/coronavirus-japan" target="_blank">Level 2: Postpone travel - olders adult and chronic health problems</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col-sm-6">
+							<h4>Higher Education Guidance</h4>
+							<div class="list-group">
+								<a href="https://www.cdc.gov/coronavirus/2019-ncov/community/guidance-ihe-response.html" target="_blank" class="list-group-item">
+									<h5 class="list-group-item-heading">CDC Interim Guidance for Administrators of US Institutions of Higher Education</h5>
+									<p class="list-group-item-text">
+										General Statement on Campus Policies
+									</p>
+								</a>
+								<a href="https://www.cdc.gov/coronavirus/2019-ncov/community/student-foreign-travel.html" target="_blank" class="list-group-item">
+									<h5 class="list-group-item-heading">CDC Guidance for Student Foreign Travel for Institutions of Higher Education</h5>
+									<p class="list-group-item-text">
+										Specific recommenations about study abroad programs
+									</p>
+								</a>
+								<a href="https://www.cdc.gov/coronavirus/2019-ncov/community/student-foreign-travel.html" target="_blank" class="list-group-item">
+									<h5 class="list-group-item-heading">ACHA Guidelines: Preparing for COVID-19</h5>
+									<p class="list-group-item-text">
+										The American College Health Assocation COVID-19 Task Force has prepared these guidelines [pdf] to help college health staff and campus administrators prepare for coronavirus disease 2019 (COVID-19) and related issues on their campuses. The guidelines are intentionally broad so that each institution, small or large, can modify them based on existing campus and local resources. Moreover, each institution should seek guidance and coordination from their local and state public health agencies.
+									</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<h3>
+							<button class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#closings">
+							<span class="glyphicon glyphicon-resize-vertical"></span>
+							</button>
+							Cancellations and Closings
+							</h3>
+						</div>
+					</div>
+					<div class="row collapse in" id="closings">
+						<div class="col-sm-12">
+							<h4>Higher Education Cancellations and Closings</h4>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Type</th>
+										<th>Name</th>
+										<th>Date Annouced</th>
+										<th>Dates Closed/Cancelled</th>
+										<th>Country</th>
+										<th>State</th>
+										<th>Notes and Links</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Major Conference/Meeting</td>
+										<td>SXSWedu</td>
+										<td>2020/03/06</td>
+										<td>03/06-03/31</td>
+										<td>USA</td>
+										<td>Texas</td>
+										<td>
+											<ul>
+												<li>Decision made by City of Austin</li>
+												<li><a href="https://www.statesman.com/business/20200306/sxsw-canceled-over-coronavirus-fears" target="_blank">SXSW Cancelled Over Coronavirus Fears</a>, <em>Austin American Stateman</em>, 3/6/20</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>Insitution/System</td>
+										<td>University of Washington</td>
+										<td>2020/03/06</td>
+										<td>03/06-03/20</td>
+										<td>USA</td>
+										<td>Washington</td>
+										<td>
+											<ul>
+												<li>No in-person classes from remainder of winter quarter</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>Insitution/System</td>
+										<td>Stanford University</td>
+										<td>2020/03/07</td>
+										<td>03/09-03/21</td>
+										<td>USA</td>
+										<td>Washington</td>
+										<td>
+											<ul>
+												<li>No in-person classes for last two weeks of winter quarter</li>
+											</ul>
+										</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<h5>Other Cancellations and Closings</h5>
+								<ul class="list-group">
+									<li class="list-group-item"><a href="https://www.barrons.com/articles/coronavirus-is-forcing-companies-to-cancel-conferences-51583147701" target="_blank">Here’s a List of Big Events Canceled Because of the Coronavirus</a>, <em>Barrons</em>, 3/7/20</li>
+									<li class="list-group-item"><a href="https://associationsnow.com/2020/02/associations-cancel-events-shake-up-schedules-in-response-to-coronavirus/" target="_blank">Associations Cancel Events, Shake Up Schedules In Response To Coronavirus</a>, <em>Associations Now</em>, 2/20/20</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<h3>
+								<button class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#definitions">
+								<span class="glyphicon glyphicon-resize-vertical"></span>
+								</button>
+								Key Definitions
+								</h3>
+							</div>
+						</div>
+						<div id="definitions" class="panel collapse in" style="padding: 1em"> 
+							<dl class="row">
+								<dt class="col-sm-3">Mortality</dt>
+								<dd class="col-sm-9">Mortality is another term for death. A mortality rate is the number of deaths due to a disease divided by the total population.<br /></dd>
+								<dt class="col-sm-3">R0</dt>
+								<dd class="col-sm-9">The basic reproduction number, R0, is defined as the expected number of secondary cases produced by a single (typical) infection in a completely susceptible population. It is important to note that R0 is a dimensionless number and not a rate, which would have units of time−1.</dd>				
+								<dt class="col-sm-3">Social distancing</dt>
+								<dd class="col-sm-9">Social distancing is a term applied to certain nonpharmaceutical infection control actions that are taken by public health officials to stop or slow down the spread of a highly contagious disease. The objective of social distancing is to reduce the probability of contact between persons carrying an infection, and others who are not infected, so as to minimize disease transmission, morbidity and ultimately, mortality.</dd>	
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<ul class="pager">
+						<li><a href="#">Previous</a></li>
+						<li><a href="#">Next</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
