@@ -9,3 +9,7 @@ a#show-pages {
 .neoPortletTitleWrap.oldPortal {
     display: none;
 }
+
+body::-webkit-scrollbar {
+    width: .5em;
+}
